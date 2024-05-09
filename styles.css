@@ -1,1 +1,9 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
 
+label {
+    justify-content: left;
+    padding-top: 10px;
+}
