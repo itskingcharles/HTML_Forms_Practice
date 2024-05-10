@@ -1,9 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 form {
     display: flex;
+    
+    align-items: flex-start;
+}
+
+.formContainer {
+    background-color: aquamarine;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 label {
     justify-content: left;
     padding-top: 10px;
+}
+
+fieldset div {
+    align-items: center;
+}
+
+fieldset {
+    width: 450px;
+}
+
+input, label, textarea {
+    width: 500px;
+}
+
+button {
+    justify-content: space-between;
 }

@@ -11,11 +11,40 @@
         <h1>Email Form</h1>
         <form action="index.js" method="post">
             <!-- Create Form Elements Here -->
+            <div class="formContainer">
             <label for="name">Name:</label>
             <input id="name" type="text" name="name" />
 
+            
+
+            <fieldset>
+                <legend>Please select your preferred contact method:</legend>
+                <div>
+                    <input type="radio" id="contactChoice1" name="contact" value="email" />
+                    <label for="contactChoice1">Email</label>
+
+                    <input type="radio" id="contactChoice2" name="contact" value="phone" />
+                    <label for="contactChoice2">Phone</label>
+
+                    <input type="radio" id="contactChoice3" name="contact" value="mail" />
+                    <label for="contactChoice3">Mail</label>
+
+
+                </div>
+            </fieldset>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input id="phoneNumber" type="text" size="12" required />
+
             <label for="email">Email:</label>
-            <input id="email" type="text" name="text" />
+            <input id="email" type="email" pattern=".+@example\.com" size="30" required />
+
+            <label for="mailAddress">Mailing Address:</label>
+            <textarea id="mailAddress"
+                name="mailAddress"
+                maxlength="200"
+                required
+                ></textarea>
 
             <label for="message">Your Message:</label>
             <textarea id="message"
@@ -25,8 +54,14 @@
                 maxlength="500"
                 ></textarea>
 
+            
+
+
+            <div>
             <button type="submit">Submit</button>
             <button type="reset">Clear</button>
+            </div>
+        </div>
         </form>
     </main>
 </body>
