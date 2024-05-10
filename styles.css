@@ -1,18 +1,40 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
 form {
     display: flex;
     
-    align-items: flex-start;
+    justify-content: space-between;
+    /* Center text items */
+    align-items: center;
+    /* Set a maximum width for form */
+    max-width: 400px;
+    /* Center the form along the x axis */
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0 auto;
 }
 
 .formContainer {
     background-color: aquamarine;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+.buttonContainer {
+    margin: 0 auto;
 }
 
 label {
