@@ -1,45 +1,64 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    
+    width: 550px;
+   /* margin: 0;*/
 }
 
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    
+    
+}
+
+.emailForm {
+    display: flex;
+    text-align: left;
 }
 
 
 form {
-    display: flex;
+    /*display: flex;
     
-    justify-content: space-between;
-    /* Center text items */
-    align-items: center;
+    
     /* Set a maximum width for form */
-    max-width: 400px;
+    max-width: 550px;
     /* Center the form along the x axis */
     margin: 0 auto;
+    padding: 0;
 }
 
 h1 {
-    margin: 0 auto;
+    
 }
 
 .formContainer {
+    display: flex;
     background-color: aquamarine;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
+
+
 
 .buttonContainer {
     margin: 0 auto;
 }
 
+.radioButton {
+    align-items: center;
+}
+
+input[type="radio"] {
+    vertical-align: middle;
+}
+
 label {
     justify-content: left;
     padding-top: 10px;
+    padding-bottom: 2px;
+    vertical-align: middle;
 }
 
 fieldset div {
@@ -47,7 +66,11 @@ fieldset div {
 }
 
 fieldset {
-    width: 450px;
+    width: 400px;
+}
+
+legend {
+    padding: 0;
 }
 
 input, label, textarea {
