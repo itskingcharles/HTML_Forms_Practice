@@ -1,58 +1,57 @@
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    width: 550px;
-   /* margin: 0;*/
+    width: 100%;
+   
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    
-    
+    max-width: 500px;
+    margin: auto;
+    width: auto;
 }
 
-.emailForm {
-    display: flex;
-    text-align: left;
+.emailForm {    
+    width: auto;
 }
 
-
-form {
-    /*display: flex;
-    
-    
-    /* Set a maximum width for form */
-    max-width: 550px;
-    /* Center the form along the x axis */
-    margin: 0 auto;
-    padding: 0;
-}
 
 h1 {
-    
+    border-bottom: 1px solid lightgray;
 }
 
 .formContainer {
     display: flex;
-    background-color: aquamarine;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;    
 }
 
-
+/* Styling for submit and reset buttons */
 
 .buttonContainer {
     margin: 0 auto;
 }
 
-.radioButton {
-    align-items: center;
+button {
+    justify-content: center;
+    margin-top: 5px;
 }
 
-input[type="radio"] {
-    vertical-align: middle;
+/* Radio buttons */
+
+.radioButton {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
 }
+
+/*input[type="radio"] {
+    vertical-align: middle;
+    margin: 0;
+
+}*/
 
 label {
     justify-content: left;
@@ -73,10 +72,22 @@ legend {
     padding: 0;
 }
 
-input, label, textarea {
-    width: 500px;
+input, label, textarea, fieldset {
+    width: 100%;
+    
+    margin-bottom: 5px;
 }
 
-button {
-    justify-content: space-between;
+
+
+div label {
+    padding-top: 10px;
+}
+
+@media all and (min-width: 600px) {
+
+    main {
+        width: 100%;
+        padding: 20px;
+    }
 }
