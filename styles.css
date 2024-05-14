@@ -1,93 +1,73 @@
+/* Body and Universal stylings */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-   
+    background-color: aquamarine;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 600px;   
 }
-
-main {
-    max-width: 500px;
-    margin: auto;
-    width: auto;
-}
-
-.emailForm {    
-    width: auto;
-}
-
 
 h1 {
     border-bottom: 1px solid lightgray;
 }
 
+/* Form level stylings */
+
 .formContainer {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;    
-}
-
-/* Styling for submit and reset buttons */
-
-.buttonContainer {
-    margin: 0 auto;
-}
-
-button {
-    justify-content: center;
-    margin-top: 5px;
-}
-
-/* Radio buttons */
-
-.radioButton {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
+    
 }
 
-/*input[type="radio"] {
-    vertical-align: middle;
-    margin: 0;
-
-}*/
-
-label {
-    justify-content: left;
-    padding-top: 10px;
-    padding-bottom: 2px;
-    vertical-align: middle;
-}
-
-fieldset div {
-    align-items: center;
-}
+/* Fieldset and Radio Buttons */
 
 fieldset {
-    display: inline-block;
-    width: 300px;
+    display: inline;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 400px;
 }
 
-legend {
-    padding: 0;
+/* Labels, input[type="text"] and Textarea */
+
+label {
+    margin-top: 5px;
+    margin-bottom: 2px;
 }
 
-input, label, textarea, fieldset {
-    width: 100%;    
-    margin-bottom: 5px;
+input[type="text"] {
+    margin-bottom: 10px;
 }
 
-
-
-div label {
-    padding-top: 10px;
+input[type="email"] {
+    margin-bottom: 10px;
 }
 
-@media all and (min-width: 600px) {
+textarea {
+    margin-bottom: 10px;
+}
 
-    main {
+/* Submit and Reset buttons */
+
+button {
+    border-radius: 4px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+@media all and (min-width: 800px) {
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: aquamarine;
+        margin: 0 auto;
         width: 100%;
-        padding: 20px;
     }
 }
