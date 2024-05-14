@@ -65,7 +65,8 @@ fieldset div {
 }
 
 fieldset {
-    width: 400px;
+    display: inline-block;
+    width: 300px;
 }
 
 legend {
@@ -73,8 +74,7 @@ legend {
 }
 
 input, label, textarea, fieldset {
-    width: 100%;
-    
+    width: 100%;    
     margin-bottom: 5px;
 }
 
